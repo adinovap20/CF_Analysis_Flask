@@ -13,6 +13,7 @@ def analyze():
     username = request.form.get('username')
     codeforces.USERNAME = username
     analyzer = CodeforcesAnalyzer()
+    return username
 
 @app.route('/dashboard')
 def dashboard():
